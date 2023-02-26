@@ -1,0 +1,16 @@
+from copy import deepcopy
+lst = [[1, 2, 3], ["4", 5, "6, 9"]]
+print(len(lst))
+print(lst[0])
+print(id(lst))
+print(id(lst[0]))
+print(id(lst[1]))
+lst2 = deepcopy(lst)
+print(lst2)
+print(id(lst2))
+print(id(lst2[0]))
+print(id(lst2[1]))
+lst2.append("укуси меня червяк")
+print(lst)
+lst.pop(0)
+print(lst2)
